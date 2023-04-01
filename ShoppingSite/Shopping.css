@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1023px) {
+    * {
+        font-size: 10px;
+    }
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header {
+    height: 80px;
+    width: 70%;
+    background-color: #ebb6e5;
+    border-radius: 3px;
+    margin: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.header .logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+@media screen and (max-width: 1023px) {
+    .header .logo {
+        font-size: 16px;
+    }
+}
+
+.cart {
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 10px;
+    border-radius: 3px;
+    width: 80px;
+}
+
+.fa-solid {
+    color: #e460d6;
+}
+
+.cart p {
+    height: 22px;
+    width: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    background-color: #e460d6;
+    color: white;
+}
+
+@media screen and (max-width: 1023px) {
+    .cart p {
+        height: 18px;
+        width: 18px;
+    }
+}
+
+.container {
+    display: flex;
+    width: 70%;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1023px) {
+    .container {
+        justify-content: space-around;
+    }
+}
+
+#root {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row: 20px;
+}
+
+@media screen and (max-width: 1023px) {
+    #root {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.sidebar {
+    width: 40%;
+    border-radius: 5px;
+    background-color: #eee;
+    margin-left: 20px;
+    padding: 15px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1023px) {
+    .sidebar {
+        width: 45%;
+        margin-left: 2px;
+        padding: 5px;
+    }
+}
+
+.head {
+    background-color: #f6a1df;
+    border: 3px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+h3{
+    color: #81e3b9;
+}
+
+p {
+    color: #f51ec4;
+}
+
+.foot{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    padding: 10px 0px;
+    border-top: 1px solid #ebb6e5;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ebb6e5;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+@media screen and (max-width: 1023px) {
+    .box {
+        padding: 10;
+    }
+}
+
+.img-box {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.images {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.bottom {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 110px;
+}
+
+@media screen and (max-width:1023px) {
+    .bottom {
+        margin-top: -30px;
+    }
+}
+
+h2{
+    font-size: 20px;
+    color: #95cfe2;
+}
+
+@media screen and (max-width: 1023px) {
+    h2 {
+        font-size: 10px;
+    }
+}
+
+button {
+    width: 100%;
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    background-color: #eca3e3;
+    padding: 7px 25px;
+    cursor: pointer;
+    color: white;
+}
+
+@media screen and (max-width: 1023px) {
+    button {
+        width: 98%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+button:hover {
+    background-color: #81e3b9;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid #aaa;
+    border-radius: 3px;
+    margin: 10px 10px;
+}
+
+@media screen and (max-width: 1023px) {
+    .cart-item {
+        flex-direction: column;
+    }
+}
+
+.row-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid #ebb6e5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rowimg {
+    max-width: 43px;
+    max-height: 43px;
+    border-radius: 50%;
+}
+
+.fa-trash:hover {
+    cursor: pointer;
+    color: #81e3b9;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EinKaufsSeite</title>
+    <link rel="stylesheet" href="./Shopping.css">
+    <link rel="stylesheet" href="./video.css">
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./ScrollTop/scroll.css">
+    <link rel="stylesheet" href="./footer.css">
+</head>
+<body>
+    <header class="header">
+        <p class="logo">Luna Prinzessin</p>
+        <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
+    </header>
+    <section class="showcase">
+        <video
+            src="./Video/01.mp4"
+            autoplay
+            loop
+            muted
+        ></video>
+    </section>
+    <main class="container">
+        <div id="root"></div>
+        <div class="sidebar">
+            <div class="head"><p>Mein WarenKorb</p></div>
+            <div id="cartItem"><p>Mein WarenKorb ist leer</p></div>
+            <div class="foot">
+                <h3>Gesamt</h3>
+                <h2 id="total">€ 0.00</h2>
+            </div>
+        </div>
+    </main>
+    <script src="./Shopping.js"></script>
+    <button class="go-top-btn">Top</button>
+    <script src="./ScrollTop/script.js"></script>
+    <footer>
+        <div class="copy-content">
+            <small class="copy">&copy; 2023 H.F</small>
+        </div>
+    </footer>
+</body>
+</html>

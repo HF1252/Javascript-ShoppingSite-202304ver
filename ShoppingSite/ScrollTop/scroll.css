@@ -1,0 +1,26 @@
+.go-top-btn {
+    position: fixed;
+    bottom: 15px;
+    right: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+    background: #95cfe2;
+    border: 3px solid #95cfe2;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 30;
+}
+
+@media screen and (max-width: 1023px) {
+    .go-top-btn {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+.go-top-btn:hover {
+    border: 3px solid #81e3b9;
+}
